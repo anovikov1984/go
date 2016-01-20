@@ -12,5 +12,5 @@ install:
   - ls -all $GOPATH/src/github.com/anovikov1984/go
   - ls -all $GOPATH/src/github.com/pubnub/go
 script:
-  - cd messaging && go test
-  - cd tests && go test
+  - cd messaging && go test -v -race
+  - cd tests && go test -v -race
