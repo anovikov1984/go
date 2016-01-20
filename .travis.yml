@@ -5,9 +5,9 @@ go:
   - 1.5.3
 
 
-before_script: 
-  - ln -s $(GOPATH)/src/github.com/pubnub/go $(GOPATH)/src/github.com/anovikov1984/go
-install: go get -t -v ./messaging/
+install:
+  - go get -t -v ./messaging/
+  - ln -s $GOPATH/src/github.com/pubnub/go $GOPATH/src/github.com/anovikov1984/go
 script:
   - cd messaging && go test
   - cd tests && go test
