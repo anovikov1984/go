@@ -6,4 +6,5 @@ go:
   - tip
 
 
+install: go get -t -v ./messaging/
 script: cd messaging && go test
