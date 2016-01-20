@@ -9,6 +9,7 @@ install:
   - go get -t -v ./messaging/
   - ln -s $GOPATH/src/github.com/pubnub/go $GOPATH/src/github.com/anovikov1984/go
   - ls -all $GOPATH/src/github.com/anovikov1984/go
+  - ls -all $GOPATH/src/github.com/pubnub/go
 script:
   - cd messaging && go test
   - cd tests && go test
