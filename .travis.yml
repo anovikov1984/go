@@ -7,4 +7,6 @@ go:
 
 
 install: go get -t -v ./messaging/
-script: cd messaging && go test
+script:
+  - cd messaging && go test
+  - cd tests && go test
