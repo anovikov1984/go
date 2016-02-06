@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"github.com/pubnub/go/messaging"
 	"github.com/stretchr/testify/assert"
+	"os"
 	"strconv"
 	"strings"
 	"testing"
@@ -16,6 +17,7 @@ import (
 // detailed history tests.
 // PrintTestMessage is defined in the common.go file.
 func TestDetailedHistoryStart(t *testing.T) {
+	messaging.SetLogOutput(os.Stderr)
 	PrintTestMessage("==========DetailedHistory tests start==========")
 }
 
