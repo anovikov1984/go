@@ -9,7 +9,7 @@ install-deps-tests:
 	go get github.com/satori/go.uuid
 	ls -al ${GOPATH}/src/github.com
 	cd ${GOPATH}/src/github.com/satori/go.uuid
-	git checkout tags/v1.1.0
+	git checkout tags v1.1.0
 	cd ${GOPATH}/src/github.com/pubnub	
 	go get -u github.com/stretchr/testify
 
