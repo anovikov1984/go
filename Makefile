@@ -6,7 +6,7 @@ run-tests: install-deps-tests
 
 install-deps-tests:
 	@echo "Install dependencies for tests"
-	go get -u github.com/pubnub/go
+	# go get -u github.com/pubnub/go
 	go get -u golang.org/x/net/context
 	
 	go get github.com/satori/go.uuid
