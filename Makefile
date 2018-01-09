@@ -6,7 +6,7 @@ run-tests: install-deps-tests
 
 install-deps-tests:
 	@echo "Install dependencies for tests"
-	sudo chmod o+x ${GOPATH}/src/github.com
+	chmod o+x ${GOPATH}/src/github.com
 	go get github.com/satori/go.uuid
 	ls -al ${GOPATH}/src/github.com
 	cd ${GOPATH}/src/github.com/satory 
