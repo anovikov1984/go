@@ -7,8 +7,8 @@ run-tests: install-deps-tests
 install-deps-tests:
 	@echo "Install dependencies for tests"
 	go get github.com/satori/go.uuid
-	ls -al ${GOPATH}/src/github.com
 	cd ${GOPATH}/src/github.com/satori/go.uuid
+	ls -al
 	git tag -l
 	git checkout tags/v1.1.0
 	cd ${GOPATH}/src/github.com/pubnub	
