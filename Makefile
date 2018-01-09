@@ -11,6 +11,7 @@ install-deps-tests:
 	pwd
 	ls -al
 	git tag -l
+	git --git-dir ${GOPATH}/src/github.com/satori/go.uuid/.git stash 
 	git --git-dir ${GOPATH}/src/github.com/satori/go.uuid/.git checkout tags/v1.1.0
 	# cd ${GOPATH}/src/github.com/pubnub	
 	go get -u github.com/stretchr/testify
